@@ -1,0 +1,43 @@
+/*This is how to commetn in CSS*/
+h1{
+    color:darkolivegreen;
+}
+h2{
+    color:cornflowerblue;
+    font-style: italic;
+    font-family: 'Georgia', Times New Roman, Times, serif;
+}
+h3{
+    font-family: cursive;
+    color:blueviolet;
+    font-style:normal;
+}
+body{
+    background-color: blanchedalmond;
+    color:darkslategray;
+}
+
+/* You can combine CSS atributes to one statement sometimes. */
+p{
+    font: large 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Example for using classes */
+.s1{
+    background-color: aliceblue;
+    text-align:center;
+    border: 5px red dashed;
+    padding: 5px;
+}
+
+.s2{
+    background-color: darkolivegreen;
+    color:sandybrown;
+    text-align:right;
+    border: 5px midnightblue groove;
+}
+.container{
+    width:80%; /* Sets width of content */
+    margin:auto;
+    text-align:center;
+}
