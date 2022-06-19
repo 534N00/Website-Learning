@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,8 @@
 
     <!--This is internal CSS-->
     <style type="text/css">
-        h3{
-            color:orangered;
+        h3 {
+            color: orangered;
             font-style: italic;
         }
     </style>
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
     <div class="container">
         <h1 style="text-align:left">Hello World</h1>
@@ -33,6 +35,8 @@
         <h3>
             what so proudly we held <br> by twilight's last gleaming
         </h3>
+
+        <!--Give class names to classify so I can apply CSS to all of a class-->
         <div class="s1">
             <p>
                 whose broad stripes and bright stars
@@ -40,9 +44,116 @@
                 <br> o'er the ranmparts we watched
             </p>
         </div>
+
         <div class="s2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, commodi ea perferendis aut provident natus dignissimos dolor sapiente blanditiis. At rerum molestiae iure labore veritatis alias debitis, quam quia minus officia maxime nihil nobis perferendis non eveniet autem? Itaque, voluptas. Expedita, voluptatibus vel! Voluptates inventore possimus nobis pariatur nostrum exercitationem!
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, commodi ea perferendis aut provident
+                natus dignissimos dolor sapiente blanditiis. At rerum molestiae iure labore veritatis alias debitis,
+                quam quia minus officia maxime nihil nobis perferendis non eveniet autem? Itaque, voluptas. Expedita,
+                voluptatibus vel! Voluptates inventore possimus nobis pariatur nostrum exercitationem!
+                <br>
+
+                <!--Button that opens new tab with link-->
+                <input type="button" class="button" onclick="window.open('https://loremipsum.io/','_blank')" value="Read More"/>
+            </p>
+
+            <p style="font-style:normal; margin:-10px 5px;">~ Claudius Germanicus Leviticus XIV</p>
         </div>
-    </div>
+        <br><br><hr>
+        <div class="categories">
+            <h2>Epic Artists</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/c/TylerTheCreator" target="_blank" rel="noopener noreferrer">Tyler
+                        the Creator</a></li>
+                <li><a href="https://www.youtube.com/user/kanyewest" target="_blank" rel="noopener noreferrer">Kanye
+                        West</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh" target="_blank"
+                        rel="noopener noreferrer">Vincent van Gogh</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/The_Beatles" target="_blank" rel="noopener noreferrer">The
+                        Beatles</a></li>
+            </ul>
+        </div>
+
+        <div class="block">
+            <h3>Tyler DIY</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloribus explicabo beatae unde similique
+                error quidem hic deserunt totam non.</p>
+        </div>
+        <div class="block">
+            <h3>Mr. West</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloribus explicabo beatae unde similique
+                error quidem hic deserunt totam non.</p>
+        </div>
+        <div class="block">
+            <h3>Vinny G</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloribus explicabo beatae unde similique
+                error quidem hic deserunt totam non.</p>
+        </div>
+        <div class="block">
+            <h3>The Bugs</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloribus explicabo beatae unde similique
+                error quidem hic deserunt totam non.</p>
+        </div>
+
+        <!--clr or Clear is to seal off the floating stuff so nothing into it-->
+        <div class="clr"></div> 
+        <hr>
+
+        <div id="main-block">
+            <h2>How To Get All the Marbles</h2>
+            <ol>
+                <li>Have money</li>
+                <li>Eat healthy</li>
+                <li>Talk to all the people</li>
+                <li>Take a nap</li>
+            </ol>
+        </div>
+        <div id="sidebar">
+            <p style="color:black; font-size:30pt;">'Merica!</p>
+        </div>
+
+        <div class="clr"></div> 
+        <hr>
+        <!--p-box = positioning box-->
+        <div class="p-box">
+            <h1>Hello</h1>
+            <h2>Goodbye</h2>
+        </div>
+        
+        <!--Check CSS for how to use pseudo classes-->
+        <ul class="my-list">
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+        </ul>
+
+        <!--Form section-->
+        <h2 style="font-style:italic">Lets make a deal!</h2>
+        <form class="form1">
+            <div class="form-entry">
+                <label>Email</label>
+                <input type="email" name="email" required />
+            </div>
+            <div class="form-entry">
+                <label>Message</label>
+                <textarea name="msg" id="t-area" cols=40% rows="7"></textarea>
+            </div>
+            <button class="button">Submit</button> <!--IDK how to use the button tag yet-->
+        </form>
+
+        <!--Fixed element Ex-->
+        <input type="button" class="fixed button" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ','_blank')" value="Click Me"/>
+
+        <!--Gives some room to scroll at the bottom-->
+        <div style="margin-top:100px;"></div>
+    </div> <!--./container-->
 </body>
 </html>

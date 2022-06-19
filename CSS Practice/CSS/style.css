@@ -22,6 +22,29 @@ p{
     font: large 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: darkgreen;
+}
+
+a:hover{
+    color:green
+}
+
+a:active{
+   color:rgb(125, 125, 255)
+}
+
+a:visited{
+    color:rgb(24, 60, 158);
+}
+
+hr{
+    color:black ;
+    height:2px;
+    background-color: fuchsia;
+}
+
 /* Example for using classes */
 .s1{
     background-color: aliceblue;
@@ -30,14 +53,128 @@ p{
     padding: 5px;
 }
 
-.s2{
+.s2 p{
+    font-family:'Times New Roman', Times, serif;
     background-color: darkolivegreen;
     color:sandybrown;
-    text-align:right;
+    text-align:center;
+    font-style:italic;
     border: 5px midnightblue groove;
+    margin: 5px;
 }
 .container{
     width:80%; /* Sets width of content */
     margin:auto;
-    text-align:center;
+}
+
+.button{
+    background-color:rgb(159, 189, 159);
+    color:rgb(247, 252, 0);
+    padding: 100px,30px;
+    border-radius:5px;
+    border-style: none;
+}
+
+.button:hover{
+    background-color:rgb(117, 189, 117)
+}
+
+.button:active{
+    background-color: rgb(68, 111, 112);
+}
+
+.fixed{
+    position:fixed;
+    top:50%;
+    right:50%;
+}
+
+/*Keeps stuff out of the floating content area*/
+.clr{
+    clear:both;
+}
+
+.block{
+    /*Lets the content sit next around each other*/
+    float:left;
+    width:50%;
+    border: 2px groove goldenrod;
+    padding:5px;
+    box-sizing:border-box; /*Simple way to get computer to take 
+                            into acount the padding and border and width
+                            so content fits most optimaly.*/
+}
+
+.categroies{
+    border:2px black solid;
+    border-radius:20px;
+}
+
+.categories h2{
+    color:darkcyan;
+}
+
+ul{
+    list-style:lower-greek;
+    font-size: 120%;
+}
+
+#main-block{
+    float: left;
+    width:55%;
+    list-style:lower-greek;
+    font-size: 120%;
+}
+
+#sidebar{
+    float:right;
+    width:25%;
+    background-image: url("../assets/dank-tuts.jpg");
+    padding:50px;
+}
+
+.p-box{
+    width:800px;
+    height:500px;
+    border: 1px solid black;
+    margin-top:30px;
+    position:relative;
+}
+
+.p-box h2{
+    position:absolute;
+    top:250px;
+    left: 300px;
+}
+
+li{
+    list-style-image: url("../assets/diamond.png");
+}
+
+.my-list li:first-child{
+    background:red;
+}
+
+.my-list li:last-child{
+    background:blue;
+}
+
+.my-list li:nth-child(3){
+    background:yellow;
+}
+
+.my-list li:nth-child(even){
+    background:orange;
+}
+
+.form1{
+    padding-left:10px;
+}
+
+.form1.form-entry{
+    padding-bottom:20px;
+}
+
+.form1 label{
+    display: block;
 }
