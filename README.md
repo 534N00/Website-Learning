@@ -1,2 +1,2 @@
-# HTML-Learning
-This project is just to begin to learn HTML and CSS.
+# Website-Code-Learning
+This project is just to begin to learn HTML and CSS and Javascript.
